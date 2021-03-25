@@ -1,0 +1,93 @@
+@keyframes slidein {
+  from {
+		margin-left: 0%;
+    width: 100%;
+  }
+  to {
+    margin-left: 100%;
+    width: 300%;
+  }
+}
+@keyframes size {
+	0% {
+		transform: scale(1, 1);
+	}
+	50% {
+		transform: scale(1.02, 1.02);
+	}
+	100% {
+		transform: scale(1, 1);
+	}
+}
+@keyframes ar {
+	from {
+		transform: scaleY(1.7);
+	}
+	50% {
+		transform:	scaleY(2.4);
+	}
+	to {
+		transform: scaleY(1.7);
+	}
+}
+@keyframes gift {
+	0% {
+		transform: scale(1, 1);
+	}
+	50% {
+		transform: scale(1.2, 1.2);
+	}
+	100% {
+		transform: scale(1, 1);
+	}
+}
+@keyframes finish {
+	0% {
+		transform: translateX(0);
+	}
+	10% {
+		transform: translateX(-7px);
+	}
+	20% {
+		transform: translateX(0);
+	}
+	30% {
+		transform: translateX(7px);
+	}
+	40% {
+		transform: translateX(0);
+	}
+	50% {
+		transform: translateY(-7px);
+	}
+	60% {
+		transform: translateY(0);
+	}
+	70% {
+		transform: translateY(7px);
+	}
+	80% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+
+}
+// @keyframes finish2 {
+// 	0% {
+// 		transform: translateY(0);
+// 	}
+// 	25% {
+// 		transform: translateY(-7px);
+// 	}
+// 	50% {
+// 		transform: translateY(0);
+// 	}
+// 	75% {
+// 		transform: translateY(7px);
+// 	}
+// 	100% {
+// 		transform: translateY(0);
+// 	}
+// }

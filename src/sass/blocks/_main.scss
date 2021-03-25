@@ -5,7 +5,11 @@
 }
 
 html {
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
+}
+
+body.lock {
+	overflow: hidden;
 }
 
 .container {
@@ -15,9 +19,24 @@ html {
 }
 
 .promo {
-	min-height: 800px;
+	// min-height: 800px;
+	position: relative;
+	min-height: 100vh;
 	background: url("../img/bg/main_bg.jpg") center center/cover no-repeat;
-	padding: 38px 0 61px;
+	padding: 38px 0 38px;
+}
+.promo .title {
+	// animation-name: slideIn;
+	// animation-duration: 5s;
+	// animation-iteration-count: 5;
+	// animation: slidein 5s infinite;
+	animation: 1.5s ease-in 0.2s 1 reverse both running slidein;
+	// animation: shadow 1s ease-in-out 0.5s alternate, move 5s linear 2s;
+}
+
+.title_big {
+	animation: size 1s ease-in-out 0.2s 1;
+	animation-delay: 2s;
 }
 
 .logo .logo_img {
@@ -40,7 +59,7 @@ h1 {
 }
 
 .title {
-	color: #f9bf3b;
+	color: $main-color;
 	font-size: 41px;
 	font-weight: 900;
 	line-height: 24px;
@@ -66,7 +85,7 @@ h2.title {
 
 .title_big::after,
 .title_big::before {
-	content: '';
+	content: "";
 	display: block;
 	width: 292px;
 	height: 2px;
@@ -85,7 +104,7 @@ h2.title {
 }
 
 .promo .promo_text span {
-	color: #f9bf3b;
+	color: $main-color;
 	font-weight: 900;
 }
 
@@ -93,7 +112,7 @@ h2.title {
 .present .present_btn {
 	display: block;
 	margin: 73px auto;
-	width: 313px;
+	min-width: 313px;
 	height: 72px;
 	box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.18);
 	border-color: rgba(0, 0, 0, 0.23);
@@ -124,12 +143,15 @@ h2.title {
 
 .more .more_img {
 	display: block;
-	margin: 10px auto 0;
+	margin: 45px auto 0;
+	// animation: arrowdown 3s infinite;
+	animation: ar 2s infinite;
+	// margin: 10px auto 0;
 }
 
 .waiting {
 	min-height: 604px;
-	background-color: #efefef;
+	background-color: $second-color;
 	padding: 85px 0 75px;
 }
 
@@ -143,20 +165,20 @@ h2.title {
 }
 
 .finish .finish_header {
-	color: #efefef;
+	color: $second-color;
 }
 
 .waiting .waiting_divider,
 .finish .finish_divider {
 	width: 217px;
 	height: 4px;
-	background-color: #f9bf3b;
+	background-color: $main-color;
 	margin: 18px auto 0;
 }
 
 .waiting .waiting_subheader {
 	margin-top: 17px;
-	color: #4a4a4a;
+	color: $third-color;
 	font-size: 23px;
 	font-weight: 400;
 	text-align: center;
@@ -179,7 +201,7 @@ h2.title {
 
 .waiting .waiting_wrapper .waiting_item .waiting_descr {
 	margin-top: 33px;
-	color: #4a4a4a;
+	color: $third-color;
 	font-size: 15px;
 	font-weight: 300;
 	line-height: 21px;
@@ -200,7 +222,7 @@ h2.title {
 
 .optimization .optimization_text {
 	margin: 25px 0 0 391px;
-	color: #4a4a4a;
+	color: $third-color;
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 22px;
@@ -247,21 +269,27 @@ h2.title {
 .finish .finish_wrapper .finish_item .finish_descr {
 	margin-top: 25px;
 	text-align: center;
-	color: #efefef;
+	color: $second-color;
 	font-size: 17px;
 	font-weight: 300;
 	line-height: 20px;
 }
 
+.finish_icon {
+	animation: ease 4s infinite finish;
+	// finish2 ease-in-out 2s infinite;
+}
+
 .present {
 	min-height: 628px;
 	padding: 86px 0 87px;
-	background-color: #efefef;
+	background-color: $second-color;
 }
 
 .present .present_img {
 	display: block;
 	margin: 0 auto;
+	animation: gift 2s infinite;
 }
 
 .present .present_text {
@@ -303,7 +331,7 @@ h2.title {
 
 .webinar .webinar_subtitle {
 	margin-top: 25px;
-	color: #4a4a4a;
+	color: $third-color;
 	font-size: 23px;
 	font-weight: 400;
 	text-align: center;
@@ -336,4 +364,13 @@ footer a {
 
 .underlined {
 	text-decoration: underline;
+}
+
+.promo_btn,
+.present_btn,
+.btn_submit {
+	&:hover {
+		background: $btn-color;
+		transition: all 1s;
+	}
 }
