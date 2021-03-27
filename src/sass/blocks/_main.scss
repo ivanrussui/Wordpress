@@ -23,7 +23,7 @@ body.lock {
 	position: relative;
 	min-height: 100vh;
 	background: url("../img/bg/main_bg.jpg") center center/cover no-repeat;
-	padding: 38px 0 38px;
+	padding: 38px 0;
 }
 .promo .title {
 	// animation-name: slideIn;
@@ -143,7 +143,7 @@ h2.title {
 
 .more .more_img {
 	display: block;
-	margin: 45px auto 0;
+	margin: 25px auto 0;
 	// animation: arrowdown 3s infinite;
 	animation: ar 2s infinite;
 	// margin: 10px auto 0;
@@ -373,4 +373,11 @@ footer a {
 		background: $btn-color;
 		transition: all 1s;
 	}
+}
+.promo .promo_btn {
+	// margin-bottom: 50px;
+	margin: 55px auto;
+}
+.more_link {
+	text-decoration: none;
 }
