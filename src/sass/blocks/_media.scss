@@ -153,6 +153,9 @@
 			background: linear-gradient(to top, #2798b9 0%, #3ab6da 100%);
 		}
 	}
+	.pageup:hover svg path {
+		fill: $btn-color;
+	}
 }
 
 @media (max-width: 767px) {
@@ -202,6 +205,13 @@
 }
 
 @media (max-width: 575px) {
+
+	.pageup {
+		width: 35px;
+		height: 35px;
+		right: 20px;
+		bottom: 35px;
+	}
 
 	.title {
 		font-size: 27px;
