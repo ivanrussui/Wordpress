@@ -6,7 +6,6 @@
 	.title_big {
 		display: block;
 		text-align: center;
-		// font-size: 48px;
 	}
 
 	.title_big::after,
@@ -95,10 +94,6 @@
 		line-height: 60px;
 	}
 
-	// .promo .promo_btn {
-	// 	margin: 50px auto 50px;
-	// }
-
 	.waiting {
 		padding: 60px 0 60px;
 	}
@@ -108,12 +103,7 @@
 	}
 
 	.optimization .optimization_img {
-		/* position: relative; */
 		max-width: 100%;
-		/* height: auto; */
-		/* top: 50%;
-		transform: translateX(-50%) translateY(-50%); */
-		/* так как изобр задано в разметке есть ряд ньюансов его надо будет корректировать при каждом медиа запр */
 	}
 
 	.finish {
@@ -132,7 +122,6 @@
 	.present .present_text {
 		font-size: 26px;
 		margin-top: 36px;
-		/* font-size: 37px; */
 		line-height: 37px;
 	}
 
@@ -187,7 +176,6 @@
 	}
 
 	.optimization .optimization_img {
-		/* max-width: 100%; */
 		top: 55px;
 	}
 
@@ -226,10 +214,6 @@
 	h2.title {
 		display: none;
 	}
-
-	// .promo {
-	// 	min-height: 580px;
-	// }
 
 	.promo .promo_text {
 		display: none;
@@ -342,11 +326,9 @@
 		padding: 14px;
 		max-width: 100%;
 		input {
-			// padding: 0;
 			max-width: 100%;
 		}
 		.btn {
-			// min-width: 200px;
 			max-width: 100%;
 			padding: 10px 15px;
 		}
@@ -359,7 +341,4 @@
 	.form {
 		width: 100%;
 	}
-	// .error {
-
-	// }
 }

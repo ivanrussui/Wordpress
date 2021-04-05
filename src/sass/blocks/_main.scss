@@ -19,19 +19,13 @@ body.lock {
 }
 
 .promo {
-	// min-height: 800px;
 	position: relative;
 	min-height: 100vh;
 	background: url("../img/bg/main_bg.jpg") center center/cover no-repeat;
 	padding: 38px 0;
 }
 .promo .title {
-	// animation-name: slideIn;
-	// animation-duration: 5s;
-	// animation-iteration-count: 5;
-	// animation: slidein 5s infinite;
 	animation: 1.5s ease-in 0.2s 1 reverse both running slidein;
-	// animation: shadow 1s ease-in-out 0.5s alternate, move 5s linear 2s;
 }
 
 .title_big {
@@ -144,9 +138,7 @@ h2.title {
 .more .more_img {
 	display: block;
 	margin: 25px auto 0;
-	// animation: arrowdown 3s infinite;
 	animation: ar 2s infinite;
-	// margin: 10px auto 0;
 }
 
 .waiting {
@@ -277,7 +269,6 @@ h2.title {
 
 .finish_icon {
 	animation: ease 4s infinite finish;
-	// finish2 ease-in-out 2s infinite;
 }
 
 .present {
@@ -375,7 +366,6 @@ footer a {
 	}
 }
 .promo .promo_btn {
-	// margin-bottom: 50px;
 	margin: 55px auto;
 }
 .more_link {
